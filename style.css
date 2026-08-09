@@ -1,0 +1,1412 @@
+/* =====================================================
+   LAKSHMIDEVI GUVVA PORTFOLIO
+   COMPLETE RESPONSIVE CSS
+   ===================================================== */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    background: #020b20;
+
+    color: #ffffff;
+
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+
+    width: 100%;
+
+    height: 76px;
+
+    padding: 0 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #020b20;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.12);
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    color: #ffffff;
+}
+
+
+.logo span {
+
+    color: #4388ff;
+
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+
+.navbar a {
+
+    position: relative;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #ffffff;
+
+    padding: 27px 0;
+
+    transition: 0.3s;
+
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+
+    color: #4388ff;
+
+}
+
+
+.navbar a.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 16px;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: #4388ff;
+
+}
+
+
+/* ================= MOBILE BUTTON ================= */
+
+.menu-btn {
+
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================================
+   HOME
+   ===================================================== */
+
+.home {
+
+    min-height: 100vh;
+
+    padding: 120px 7% 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(25,80,180,0.20),
+            transparent 35%
+        ),
+
+        #020b20;
+
+}
+
+
+.home::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(35,100,230,0.13);
+
+    filter: blur(100px);
+
+    right: 15%;
+
+    top: 25%;
+
+}
+
+
+/* ================= HOME CONTENT ================= */
+
+.home-content {
+
+    max-width: 600px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.hello {
+
+    color: #4388ff;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+.home-content h1 span {
+    display: block;
+    color: #4388ff;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: -2px;
+
+    background: linear-gradient(
+        90deg,
+        #4388ff,
+        #00b7ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-content h1 span {
+
+    display: block;
+
+    color: #4388ff;
+
+}
+
+
+.home-content h2 {
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    padding-left: 12px;
+
+    border-left: 4px solid #4388ff;
+
+    margin-bottom: 22px;
+
+}
+
+
+.home-content h2 span {
+
+    color: #4388ff;
+
+    font-weight: 600;
+
+}
+
+
+.intro {
+
+    max-width: 560px;
+
+    color: #dce5f5;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ================= BUTTONS ================= */
+
+.home-buttons {
+
+    display: flex;
+
+    gap: 17px;
+
+    margin-bottom: 27px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    min-width: 175px;
+
+    padding: 13px 24px;
+
+    border-radius: 6px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+}
+
+
+.primary-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #4388ff,
+            #2364d5
+        );
+
+    border: 1px solid #4388ff;
+
+    color: #ffffff;
+
+}
+
+
+.primary-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 30px rgba(67,136,255,0.3);
+
+}
+
+
+.secondary-btn {
+
+    background: transparent;
+
+    border:
+        1px solid rgba(255,255,255,0.6);
+
+    color: white;
+
+}
+
+
+.secondary-btn:hover {
+
+    border-color: #4388ff;
+
+    color: #4388ff;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social-links {
+
+    display: flex;
+
+    gap: 17px;
+
+}
+
+
+.social-links a {
+
+    width: 48px;
+
+    height: 48px;
+
+    border:
+        1px solid rgba(255,255,255,0.55);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.social-links a:hover {
+
+    color: #4388ff;
+
+    border-color: #4388ff;
+
+    transform: translateY(-4px);
+
+}
+
+
+/* ================= PROFILE IMAGE ================= */
+
+.home-image {
+
+    width: 45%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.image-circle {
+
+    width: min(430px, 38vw);
+
+    aspect-ratio: 1;
+
+    padding: 5px;
+
+    border-radius: 50%;
+
+    border: 2px solid #4c8dff;
+
+    overflow: hidden;
+
+    background: #061a42;
+
+    box-shadow:
+
+        0 0 25px rgba(67,136,255,0.5),
+
+        0 0 60px rgba(67,136,255,0.15);
+
+}
+
+
+.image-circle img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+
+    display: block;
+
+}
+
+
+/* ================= DOTS ================= */
+
+.home-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 105px;
+
+    height: 230px;
+
+    right: -10px;
+
+    top: 5%;
+
+    background-image:
+
+        radial-gradient(
+            circle,
+            #316fe0 2.5px,
+            transparent 3px
+        );
+
+    background-size: 22px 22px;
+
+    opacity: 0.7;
+
+    z-index: -1;
+
+}
+
+
+/* =====================================================
+   WHY HIRE ME
+   ===================================================== */
+
+.about {
+
+    padding: 70px 5% 55px;
+
+    background: #03112d;
+
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+.section-title h2 {
+
+    color: #4388ff;
+
+    font-size: 23px;
+
+}
+
+
+.section-title span {
+
+    display: block;
+
+    width: 40px;
+
+    height: 2px;
+
+    background: #4388ff;
+
+    margin: 8px auto;
+
+}
+
+
+.quote {
+
+    max-width: 1050px;
+
+    margin: 0 auto 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    text-align: center;
+
+}
+
+
+.quote p {
+
+    flex: 1;
+
+    color: #e2e8f3;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+}
+
+
+.quote-symbol {
+
+    color: #4388ff;
+
+    font-size: 70px;
+
+    font-family: Georgia, serif;
+
+}
+
+
+/* ================= CARDS ================= */
+
+.about-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background:
+        rgba(4,22,52,0.7);
+
+}
+
+
+.info-card {
+
+    min-height: 390px;
+
+    padding: 28px 25px;
+
+    border-right:
+        1px solid rgba(255,255,255,0.18);
+
+}
+
+
+.info-card:last-child {
+
+    border-right: none;
+
+}
+
+
+.card-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    margin: 0 auto 15px;
+
+    border:
+        1px solid #4388ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #4388ff;
+
+    font-size: 22px;
+
+}
+
+
+.info-card h3 {
+
+    text-align: center;
+
+    color: #4388ff;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.info-card li {
+
+    position: relative;
+
+    padding-left: 18px;
+
+    margin-bottom: 15px;
+
+    color: #e1e7f1;
+
+    font-size: 13.5px;
+
+}
+
+
+.info-card li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 9px;
+
+    width: 6px;
+
+    height: 6px;
+
+    background: #4388ff;
+
+    border-radius: 50%;
+
+}
+
+
+.info-card strong {
+
+    color: white;
+
+}
+
+
+.info-card p {
+
+    color: #e1e7f1;
+
+    font-size: 13.5px;
+
+    line-height: 1.75;
+
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact {
+
+    padding: 25px 5% 50px;
+
+    background: #03112d;
+
+}
+
+
+.contact-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.3fr;
+
+    gap: 40px;
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    border-radius: 10px;
+
+}
+
+
+.section-title.left {
+
+    text-align: left;
+
+}
+
+
+.section-title.left span {
+
+    margin-left: 0;
+
+}
+
+
+.contact-info p {
+
+    margin-bottom: 17px;
+
+    color: #e2e8f3;
+
+    font-size: 14px;
+
+}
+
+
+.contact-info a {
+
+    color: #e2e8f3;
+
+}
+
+
+.contact-info a:hover {
+
+    color: #4388ff;
+
+}
+
+
+/* ================= FORM ================= */
+
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+}
+
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border:
+        1px solid rgba(255,255,255,0.12);
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    color: white;
+
+    font-family: inherit;
+
+}
+
+
+.contact-form textarea {
+
+    resize: vertical;
+
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color: #4388ff;
+
+}
+
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+
+    color: #9aa9c0;
+
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+
+    padding: 20px 5%;
+
+    background: #020b20;
+
+    border-top:
+        1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+
+footer p {
+
+    color: #dce4f0;
+
+    font-size: 13px;
+
+}
+
+
+.top-btn {
+
+    position: absolute;
+
+    right: 5%;
+
+    width: 38px;
+
+    height: 38px;
+
+    border:
+        1px solid #4388ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #4388ff;
+
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+
+        gap: 25px;
+
+    }
+
+
+    .home {
+
+        gap: 30px;
+
+    }
+
+
+    .home-content h1 {
+
+        font-size: 52px;
+
+    }
+
+
+    .about-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .info-card:nth-child(2),
+    .info-card:nth-child(4) {
+
+        border-right: none;
+
+    }
+
+
+    .info-card:nth-child(1),
+    .info-card:nth-child(2) {
+
+        border-bottom:
+            1px solid rgba(255,255,255,0.18);
+
+    }
+
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+
+        height: 70px;
+
+        padding: 0 6%;
+
+    }
+
+
+    .logo {
+
+        font-size: 23px;
+
+    }
+
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+
+    .navbar {
+
+        position: absolute;
+
+        top: 70px;
+
+        left: -100%;
+
+        width: 100%;
+
+        padding: 12px 0;
+
+        background: #020b20;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        transition: 0.3s;
+
+    }
+
+
+    .navbar.show {
+
+        left: 0;
+
+    }
+
+
+    .navbar a {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 13px;
+
+    }
+
+
+    .navbar a.active::after {
+
+        display: none;
+
+    }
+
+
+    /* HOME */
+
+    .home {
+
+        min-height: auto;
+
+        padding: 110px 6% 60px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 45px;
+
+    }
+
+
+    .hello {
+
+        font-size: 20px;
+
+    }
+
+
+    .home-content h1 {
+
+        font-size: 43px;
+
+    }
+
+
+    .home-content h2 {
+
+        display: inline-block;
+
+        text-align: left;
+
+        font-size: 17px;
+
+    }
+
+
+    .intro {
+
+        font-size: 14px;
+
+    }
+
+
+    .home-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .social-links {
+
+        justify-content: center;
+
+    }
+
+
+    .home-image {
+
+        width: 100%;
+
+    }
+
+
+    .image-circle {
+
+        width: 320px;
+
+    }
+
+
+    .home-image::after {
+
+        right: 3%;
+
+        width: 70px;
+
+        height: 180px;
+
+        background-size: 18px 18px;
+
+    }
+
+
+    /* ABOUT */
+
+    .about {
+
+        padding: 55px 6% 45px;
+
+    }
+
+
+    .quote {
+
+        display: block;
+
+    }
+
+
+    .quote-symbol {
+
+        display: none;
+
+    }
+
+
+    .quote p {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .info-card {
+
+        min-height: auto;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(255,255,255,0.18);
+
+    }
+
+
+    .info-card:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+
+        padding: 15px 6% 40px;
+
+    }
+
+
+    .contact-container {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+        padding: 20px 55px 20px 20px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 450px) {
+
+    .logo {
+
+        font-size: 21px;
+
+    }
+
+
+    .home-content h1 {
+
+        font-size: 37px;
+
+    }
+
+
+    .home-content h2 {
+
+        font-size: 15px;
+
+    }
+
+
+    .home-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .btn {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
+    .image-circle {
+
+        width: 280px;
+
+    }
+
+}
+/* ================= SIDE FALLING NAME ================= */
+
+.falling-name {
+    margin-bottom: 25px;
+    line-height: 0.95;
+    overflow: hidden;
+}
+
+.falling-name .name-line {
+    display: block;
+
+    font-size: clamp(52px, 7vw, 82px);
+    font-weight: 900;
+    letter-spacing: -2px;
+
+    color: #ffffff;
+
+    opacity: 0;
+
+    transform: translateX(-120px);
+
+    animation: sideFall 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.falling-name .blue-name {
+    color: #4388ff;
+    animation-delay: 0.25s;
+}
+
+
+/* SIDE FALLING ANIMATION */
+
+@keyframes sideFall {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateX(12px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .falling-name .name-line {
+        font-size: clamp(45px, 12vw, 65px);
+        letter-spacing: -1.5px;
+    }
+
+}
